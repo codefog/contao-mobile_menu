@@ -1,0 +1,27 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+    <div id="mobile-menu-trigger-<?php echo $this->id; ?>" class="mobile_menu_trigger<?php echo $this->triggerClass; ?>">
+        <?php echo $this->trigger; ?>
+    </div>
+
+    <div id="mobile-menu-overlay-<?php echo $this->id; ?>" class="mobile_menu_overlay"></div>
+
+    <div id="mobile-menu-<?php echo $this->id; ?>" class="mobile_menu">
+        <div class="inner">
+            <?php echo $this->html; ?>
+        </div>
+    </div>
+
+    <script>
+    (function() {
+        mobileMenu({
+            'menu': document.getElementById('mobile-menu-<?php echo $this->id; ?>'),
+            'trigger': document.getElementById('mobile-menu-trigger-<?php echo $this->id; ?>'),
+            'overlay': document.getElementById('mobile-menu-overlay-<?php echo $this->id; ?>')
+        });
+    })();
+    </script>
+
+<?php $this->endblock(); ?>

@@ -1,6 +1,6 @@
-<?php $this->extend('block_unsearchable'); ?>
 
-<?php $this->block('content'); ?>
+<!-- indexer::stop -->
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
 
     <div id="mobile-menu-trigger-<?php echo $this->id; ?>" class="mobile_menu_trigger<?php echo $this->triggerClass; ?>">
         <?php echo $this->trigger; ?>
@@ -24,4 +24,5 @@
     })();
     </script>
 
-<?php $this->endblock(); ?>
+</div>
+<!-- indexer::continue -->

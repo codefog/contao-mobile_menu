@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 1.1.1 stable (2014-09-??)
+---------------------------------
+
+### Fixed
+- Fixed the menu not working on Firefox
+
+
 Version 1.1.0 stable (2014-09-03)
 ---------------------------------
 

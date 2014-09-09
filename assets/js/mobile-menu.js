@@ -120,7 +120,7 @@ var mobileMenu = function(config) {
     /**
      * Initialize the menu
      */
-    document.body.insertBefore(menu);
+    document.body.appendChild(menu);
     var navigation = (menu.getElementsByClassName('level_1'))[0];
 
     if (navigation) {
@@ -140,7 +140,7 @@ var mobileMenu = function(config) {
     /**
      * Initialize the overlay
      */
-    document.body.insertBefore(overlay);
+    document.body.appendChild(overlay);
 
     overlay.addEventListener('click', function() {
         removeClass(menu, 'active');

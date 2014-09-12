@@ -44,21 +44,21 @@ var mobileMenu = function(config) {
 
             // Open the submenu of the active item
             if (hasClass(link, 'active') || hasClass(link, 'trail')) {
-                addClass(item, 'display_submenu');
+                addClass(item, 'submenu_show');
             }
 
             // Open the submenu on click
             link.addEventListener('click', function(e) {
                 var item = this.parentNode;
 
-                if (!hasClass(item, 'display_submenu')) {
+                if (!hasClass(item, 'submenu_show')) {
                     e.preventDefault();
 
                     for (var j=0; j<submenus.length; j++) {
-                        removeClass(submenus[j], 'display_submenu');
+                        removeClass(submenus[j], 'submenu_show');
                     }
 
-                    addClass(item, 'display_submenu');
+                    addClass(item, 'submenu_show');
                 }
             });
 

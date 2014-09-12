@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 1.1.2 stable (2014-09-??)
+---------------------------------
+
+### Fixed
+- Fixed the bug with CSS class
+
+
 Version 1.1.1 stable (2014-09-09)
 ---------------------------------
 

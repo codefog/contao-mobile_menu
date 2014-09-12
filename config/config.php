@@ -16,7 +16,7 @@
  * Extension version
  */
 @define('MOBILE_MENU_VERSION', '1.1');
-@define('MOBILE_MENU_BUILD', '1');
+@define('MOBILE_MENU_BUILD', '2');
 
 /**
  * Front end modules

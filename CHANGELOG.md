@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 1.1.3 stable (2014-12-??)
+---------------------------------
+
+### Fixed
+- Added the composer.json file
+
+
 Version 1.1.2 stable (2014-09-12)
 ---------------------------------
 

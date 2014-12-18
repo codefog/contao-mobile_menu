@@ -1,0 +1,25 @@
+{
+    "name": "codefog/contao-mobile_menu",
+    "description": "mobile_menu extension for Contao Open Source CMS",
+    "keywords": ["contao", "mobile", "menu", "navigation"],
+    "type": "contao-module",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Codefog",
+            "homepage": "http://codefog.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "contao/core": ">=3.2",
+        "contao-community-alliance/composer-plugin": "2.*"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/mobile_menu"
+            }
+        }
+    }
+}

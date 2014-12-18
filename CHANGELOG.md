@@ -1,7 +1,7 @@
 mobile_menu Changelog
 =====================
 
-Version 1.1.3 stable (2014-12-??)
+Version 1.1.3 stable (2014-12-18)
 ---------------------------------
 
 ### Fixed

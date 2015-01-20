@@ -8,17 +8,11 @@
  * @package mobile_menu
  * @author  Codefog <http://codefog.pl>
  * @author  Kamil Kuzminski <kamil.kuzminski@codefog.pl>
+ * @author  Didier Federer <d.federer@designpilot.ch>
  * @license LGPL
  */
-
-
-/**
- * Extension version
- */
-@define('MOBILE_MENU_VERSION', '1.1');
-@define('MOBILE_MENU_BUILD', '4');
 
 /**
  * Front end modules
  */
-$GLOBALS['FE_MOD']['navigation']['mobile_menu'] = 'MobileMenu\ModuleMobileMenu';
+$GLOBALS['TL_LANG']['FMD']['mobile_menu'] = array('Mobile Menu', 'Fügt ein Mobile Menu auf der Seite ein.');

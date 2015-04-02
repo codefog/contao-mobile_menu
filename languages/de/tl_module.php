@@ -15,7 +15,7 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_module']['mobile_menu_phones']  = array('Auf Smartphones anzeigen', 'Zeigt das Menu auf Smartphones an.');
-$GLOBALS['TL_LANG']['tl_module']['mobile_menu_tablets'] = array('Auf Tablets anzeigen', 'Zeigt das Menu auf Tablets an.');
+$GLOBALS['TL_LANG']['tl_module']['mobile_menu_phones']  = array('Auf Smartphones anzeigen', 'Zeigt das Menu auf Smartphones an (max-width: 767px).');
+$GLOBALS['TL_LANG']['tl_module']['mobile_menu_tablets'] = array('Auf Tablets anzeigen', 'Zeigt das Menu auf Tablets an (max-width: 991px).');
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_trigger'] = array('Trigger Inhalt', 'Hier können Sie den HTML Inhalt des Triggers einfügen.');
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_html']    = array('Menu Inhalt', 'Hier können Sie den HTML Inhalt des Menus einfügen.');

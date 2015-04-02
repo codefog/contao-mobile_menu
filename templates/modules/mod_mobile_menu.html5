@@ -6,9 +6,9 @@
         <?php echo $this->trigger; ?>
     </div>
 
-    <div id="mobile-menu-overlay-<?php echo $this->id; ?>" class="mobile_menu_overlay"></div>
+    <div id="mobile-menu-overlay-<?php echo $this->id; ?>" class="mobile_menu_overlay<?php echo $this->triggerClass; ?>"></div>
 
-    <div id="mobile-menu-<?php echo $this->id; ?>" class="mobile_menu">
+    <div id="mobile-menu-<?php echo $this->id; ?>" class="mobile_menu<?php echo $this->triggerClass; ?>">
         <div class="inner">
             <?php echo $this->html; ?>
         </div>

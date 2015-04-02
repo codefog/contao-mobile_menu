@@ -7,6 +7,9 @@ Version 1.2.0 stable (2015-??-??)
 ### Improved
 - Added the .gitignore file
 
+### Fixed
+- The menu is no longer visible if it exceeds the breakpoint (even if it is active)
+
 
 Version 1.1.4 stable (2015-01-20)
 ---------------------------------

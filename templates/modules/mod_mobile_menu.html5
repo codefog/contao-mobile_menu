@@ -8,7 +8,7 @@
 
     <div id="mobile-menu-overlay-<?php echo $this->id; ?>" class="mobile_menu_overlay<?php echo $this->triggerClass; ?>"></div>
 
-    <div id="mobile-menu-<?php echo $this->id; ?>" class="mobile_menu<?php echo $this->triggerClass; ?>">
+    <div id="mobile-menu-<?php echo $this->id; ?>" class="mobile_menu position_<?php echo $this->position; ?><?php echo $this->triggerClass; ?>"<?php if ($this->menuStyle): ?> style="<?php echo $this->menuStyle['property']; ?>:<?php echo $this->menuStyle['value']; ?>"<?php endif; ?>>
         <div class="inner">
             <?php echo $this->html; ?>
         </div>

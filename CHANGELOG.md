@@ -6,6 +6,7 @@ Version 1.2.0 stable (2015-??-??)
 
 ### Improved
 - Added the .gitignore file
+- Added the custom position and size features
 
 ### Fixed
 - The menu is no longer visible if it exceeds the breakpoint (even if it is active)

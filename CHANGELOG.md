@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 1.2.0 stable (2015-??-??)
+---------------------------------
+
+### Improved
+- Added the .gitignore file
+
+
 Version 1.1.4 stable (2015-01-20)
 ---------------------------------
 

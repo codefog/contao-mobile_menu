@@ -10,6 +10,7 @@ Version 1.2.0 stable (2015-??-??)
 
 ### Fixed
 - The menu is no longer visible if it exceeds the breakpoint (even if it is active)
+- Fixed the bug where only one navigation module inside menu was supported
 
 
 Version 1.1.4 stable (2015-01-20)

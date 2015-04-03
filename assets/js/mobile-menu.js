@@ -1,7 +1,7 @@
 /**
  * mobile_menu extension for Contao Open Source CMS
  *
- * Copyright (C) 2011-2014 Codefog
+ * Copyright (C) 2011-2015 Codefog
  *
  * @package mobile_menu
  * @author  Codefog <http://codefog.pl>
@@ -121,10 +121,13 @@ var mobileMenu = function(config) {
      * Initialize the menu
      */
     document.body.appendChild(menu);
-    var navigation = (menu.getElementsByClassName('level_1'))[0];
 
-    if (navigation) {
-        initNavigation(navigation);
+    var navigations = menu.getElementsByClassName('level_1');
+
+    if (navigations.length > 0) {
+        for (var i = 0; i < navigations.length; i++) {
+            initNavigation(navigations[i]);
+        }
     }
 
     /**

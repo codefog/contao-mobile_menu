@@ -1,11 +1,2 @@
-/**
- * mobile_menu extension for Contao Open Source CMS
- *
- * Copyright (C) 2011-2014 Codefog
- *
- * @package mobile_menu
- * @author  Codefog <http://codefog.pl>
- * @author  Kamil Kuzminski <kamil.kuzminski@codefog.pl>
- * @license LGPL
- */
-.mobile_menu{position:fixed;top:0;left:0;width:80%;height:100%;z-index:100;display:none}.mobile_menu .inner{height:100%;background:#000000;overflow-y:scroll}.mobile_menu.active{display:block}.mobile_menu_overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:99;display:none;background:rgba(0,0,0,0.5)}.mobile_menu_overlay.active{display:block}.mobile_menu_trigger{display:none}@media (max-width: 991px){.mobile_menu_trigger.display_tablets{display:block}}@media (max-width: 767px){.mobile_menu_trigger.display_phones{display:block}}.mobile_menu li.submenu > ul{display:none}.mobile_menu li.submenu_show > ul{display:block}
+/* mobile_menu extension for Contao Open Source CMS, Copyright (C) 2011-2015 Codefog */
+.mobile_menu{position:fixed;top:0;left:0;width:80%;height:100%;z-index:100;display:none}.mobile_menu.position_right{left:auto;right:0}.mobile_menu.position_top{width:100%;height:80%}.mobile_menu.position_bottom{width:100%;height:80%;top:auto;bottom:0}.mobile_menu .inner{height:100%;background:#000;overflow-y:scroll}.mobile_menu_overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:99;display:none;background:rgba(0,0,0,0.5)}.mobile_menu_trigger{display:none}@media(max-width:991px){.mobile_menu_trigger.display_tablets,.mobile_menu.display_tablets.active,.mobile_menu_overlay.display_tablets.active{display:block}}@media(max-width:767px){.mobile_menu_trigger.display_phones,.mobile_menu.display_phones.active,.mobile_menu_overlay.display_phones.active{display:block}}.mobile_menu li.submenu>ul{display:none}.mobile_menu li.submenu_show>ul{display:block}

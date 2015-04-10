@@ -14,7 +14,7 @@
 /**
  * Add palettes to tl_module
  */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['mobile_menu'] = '{title_legend},name,type;{config_legend},mobile_menu_phones,mobile_menu_tablets,mobile_menu_trigger,mobile_menu_html;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['mobile_menu'] = '{title_legend},name,type;{config_legend},mobile_menu_phones,mobile_menu_tablets,mobile_menu_position,mobile_menu_size,mobile_menu_trigger,mobile_menu_html;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
 /**
  * Add fields to tl_module
@@ -35,6 +35,27 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_tablets'] = array
     'inputType'               => 'checkbox',
     'eval'                    => array('tl_class'=>'w50'),
     'sql'                     => "char(1) NOT NULL default ''"
+);
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_position'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_module']['mobile_menu_position'],
+    'default'                 => 'left',
+    'exclude'                 => true,
+    'inputType'               => 'select',
+    'options'                 => array('left', 'right', 'top', 'bottom'),
+    'reference'               => &$GLOBALS['TL_LANG']['tl_module']['mobile_menu_position'],
+    'eval'                    => array('tl_class'=>'w50'),
+    'sql'                     => "varchar(8) NOT NULL default ''"
+);
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_size'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_module']['mobile_menu_size'],
+    'exclude'                 => true,
+    'inputType'               => 'text',
+    'eval'                    => array('rgxp'=>'prcnt', 'tl_class'=>'w50'),
+    'sql'                     => "varchar(3) NOT NULL default ''"
 );
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_trigger'] = array

@@ -1,6 +1,19 @@
 mobile_menu Changelog
 =====================
 
+Version 1.2.0 stable (2015-04-10)
+---------------------------------
+
+### Improved
+- Added the .gitignore file
+- Added the custom position and size features
+- Minified the copyright statement in assets files
+
+### Fixed
+- The menu is no longer visible if it exceeds the breakpoint (even if it is active)
+- Fixed the bug where only one navigation module inside menu was supported
+
+
 Version 1.1.4 stable (2015-01-20)
 ---------------------------------
 

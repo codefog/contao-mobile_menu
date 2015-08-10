@@ -11,7 +11,6 @@
  * @license LGPL
  */
 
-
 /**
  * Extension version
  */
@@ -21,4 +20,4 @@
 /**
  * Front end modules
  */
-$GLOBALS['FE_MOD']['navigation']['mobile_menu'] = 'MobileMenu\ModuleMobileMenu';
+$GLOBALS['FE_MOD']['navigation']['mobile_menu'] = 'Codefog\MobileMenu\MobileMenuModule';

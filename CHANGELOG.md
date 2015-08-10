@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.0.0 stable (2015-??-??)
+---------------------------------
+
+### Improved
+- Moved the classes to the new namespace
+
+
 Version 1.2.0 stable (2015-04-10)
 ---------------------------------
 

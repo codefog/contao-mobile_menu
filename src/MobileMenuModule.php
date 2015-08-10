@@ -11,14 +11,14 @@
  * @license LGPL
  */
 
-namespace MobileMenu;
+namespace Codefog\MobileMenu;
 
 /**
- * Class ModuleMobileMenu
+ * Class MobileMenuModule
  *
  * Front end module "mobile menu".
  */
-class ModuleMobileMenu extends \Module
+class MobileMenuModule extends \Module
 {
 
     /**

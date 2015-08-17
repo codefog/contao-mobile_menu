@@ -6,6 +6,7 @@ Version 2.0.0 stable (2015-??-??)
 
 ### Improved
 - Moved the classes to the new namespace
+- Basic rewrite of the extension, added new features like animations, custom break points, off canvas effect, etc.
 
 
 Version 1.2.0 stable (2015-04-10)

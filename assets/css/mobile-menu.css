@@ -13,6 +13,7 @@
 .mobile_menu {
     position: fixed;
     z-index: 100;
+    display: none;
 }
 
 .mobile_menu .inner {

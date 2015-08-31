@@ -69,6 +69,9 @@
             });
 
             this.updateElementsVisibility();
+
+            // Once everything is ready make sure the menu is visible
+            this.element.css('display', 'block');
         },
 
         /**

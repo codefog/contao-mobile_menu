@@ -1,28 +1,33 @@
 
-<!-- indexer::stop -->
-<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<?php $this->extend('block_unsearchable'); ?>
 
-    <div id="mobile-menu-trigger-<?php echo $this->id; ?>" class="mobile_menu_trigger<?php echo $this->triggerClass; ?>">
-        <?php echo $this->trigger; ?>
-    </div>
+<?php $this->block('content'); ?>
 
-    <div id="mobile-menu-overlay-<?php echo $this->id; ?>" class="mobile_menu_overlay<?php echo $this->triggerClass; ?>"></div>
-
-    <div id="mobile-menu-<?php echo $this->id; ?>" class="mobile_menu position_<?php echo $this->position; ?><?php echo $this->triggerClass; ?>"<?php if ($this->menuStyle): ?> style="<?php echo $this->menuStyle['property']; ?>:<?php echo $this->menuStyle['value']; ?>"<?php endif; ?>>
-        <div class="inner">
-            <?php echo $this->html; ?>
-        </div>
-    </div>
-
-    <script>
-    (function() {
-        mobileMenu({
-            'menu': document.getElementById('mobile-menu-<?php echo $this->id; ?>'),
-            'trigger': document.getElementById('mobile-menu-trigger-<?php echo $this->id; ?>'),
-            'overlay': document.getElementById('mobile-menu-overlay-<?php echo $this->id; ?>')
-        });
-    })();
-    </script>
-
+<div id="mobile-menu-<?= $this->id; ?>-trigger" class="mobile_menu_trigger">
+    <?= $this->trigger; ?>
 </div>
-<!-- indexer::continue -->
+
+<div id="mobile-menu-<?= $this->id; ?>" class="mobile_menu">
+    <div class="inner">
+        <?= $this->html; ?>
+    </div>
+</div>
+
+<script>
+(function($) {
+    $('#mobile-menu-<?= $this->id; ?>').mobileMenu({
+        <?php if ($this->animation): ?>
+        'animation': true,
+        'animationSpeed': <?= $this->animationSpeed ?>,
+        <?php endif; ?>
+        'breakPoint': <?= $this->breakPoint ?>,
+        'offCanvas': <?= $this->offCanvas ? 'true' : 'false' ?>,
+        'overlay': <?= $this->overlay ? 'true' : 'false' ?>,
+        'position': '<?= $this->position ?>',
+        <?php if ($this->size): ?>'size': '<?= $this->size ?>',<?php endif; ?>
+        'trigger': $('#mobile-menu-<?= $this->id; ?>-trigger')
+    });
+})(jQuery);
+</script>
+
+<?php $this->endblock(); ?>

@@ -11,14 +11,13 @@
  * @license LGPL
  */
 
-
 /**
  * Extension version
  */
-@define('MOBILE_MENU_VERSION', '1.2');
+@define('MOBILE_MENU_VERSION', '2.0');
 @define('MOBILE_MENU_BUILD', '0');
 
 /**
  * Front end modules
  */
-$GLOBALS['FE_MOD']['navigation']['mobile_menu'] = 'MobileMenu\ModuleMobileMenu';
+$GLOBALS['FE_MOD']['navigation']['mobile_menu'] = 'Codefog\MobileMenu\MobileMenuModule';

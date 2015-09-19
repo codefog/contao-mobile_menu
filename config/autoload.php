@@ -14,14 +14,14 @@
 /**
  * Register the namespace
  */
-ClassLoader::addNamespace('MobileMenu');
+ClassLoader::addNamespace('Codefog\MobileMenu');
 
 /**
  * Register the classes
  */
 ClassLoader::addClasses(array
 (
-    'MobileMenu\ModuleMobileMenu' => 'system/modules/mobile_menu/modules/ModuleMobileMenu.php'
+    'Codefog\MobileMenu\MobileMenuModule' => 'system/modules/mobile_menu/src/MobileMenuModule.php'
 ));
 
 /**

@@ -1,6 +1,15 @@
 mobile_menu Changelog
 =====================
 
+Version 2.0.0 stable (2015-09-19)
+---------------------------------
+
+### Improved
+- Moved the classes to the new namespace
+- Basic rewrite of the extension, added new features like animations, custom break points, off canvas effect, etc.
+- The extension is now compatible with Contao 3.5+ only
+
+
 Version 1.2.0 stable (2015-04-10)
 ---------------------------------
 

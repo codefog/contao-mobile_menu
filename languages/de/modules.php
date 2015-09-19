@@ -15,4 +15,4 @@
 /**
  * Front end modules
  */
-$GLOBALS['TL_LANG']['FMD']['mobile_menu'] = array('Mobile Menu', 'Fügt ein Mobile Menu auf der Seite ein.');
+$GLOBALS['TL_LANG']['FMD']['mobile_menu'] = ['Mobile Menu', 'Fügt ein Mobile Menu auf der Seite ein.'];

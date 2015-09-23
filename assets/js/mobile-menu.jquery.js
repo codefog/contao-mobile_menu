@@ -87,6 +87,12 @@
                 self.initMenuNavigation($(this));
             });
 
+            // Init the close buttons
+            this.element.find('[data-mobile-menu="close"]').on('click', function(e) {
+                e.preventDefault();
+                self.hideMenu();
+            });
+
             // Set the position CSS class
             this.element.addClass('position_' + this.settings.position);
 
@@ -379,6 +385,11 @@
 
             this.showOverlay();
             this.element.addClass(this.settings.menuActiveClass);
+
+            // Add class to trigger
+            if (this.settings.trigger) {
+                this.settings.trigger.addClass(this.settings.menuActiveClass);
+            }
         },
 
         /**
@@ -421,6 +432,11 @@
 
             this.hideOverlay();
             this.element.removeClass(this.settings.menuActiveClass);
+
+            // Remove the class from trigger
+            if (this.settings.trigger) {
+                this.settings.trigger.removeClass(this.settings.menuActiveClass);
+            }
         },
 
         /**

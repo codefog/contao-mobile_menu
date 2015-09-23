@@ -379,6 +379,11 @@
 
             this.showOverlay();
             this.element.addClass(this.settings.menuActiveClass);
+
+            // Add class to trigger
+            if (this.settings.trigger) {
+                this.settings.trigger.addClass(this.settings.menuActiveClass);
+            }
         },
 
         /**
@@ -421,6 +426,11 @@
 
             this.hideOverlay();
             this.element.removeClass(this.settings.menuActiveClass);
+
+            // Remove the class from trigger
+            if (this.settings.trigger) {
+                this.settings.trigger.removeClass(this.settings.menuActiveClass);
+            }
         },
 
         /**

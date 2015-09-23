@@ -87,6 +87,12 @@
                 self.initMenuNavigation($(this));
             });
 
+            // Init the close buttons
+            this.element.find('[data-mobile-menu="close"]').on('click', function(e) {
+                e.preventDefault();
+                self.hideMenu();
+            });
+
             // Set the position CSS class
             this.element.addClass('position_' + this.settings.position);
 

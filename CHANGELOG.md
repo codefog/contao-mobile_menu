@@ -6,6 +6,7 @@ Version 2.1.0 stable (2015-??-??)
 
 ### Improved
 - The trigger has now the active class when menu is open
+- Added the option to use custom close buttons inside the menu
 
 
 Version 2.0.0 stable (2015-09-19)

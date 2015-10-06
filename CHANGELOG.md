@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.1.1 stable (2015-10-06)
+---------------------------------
+
+### Fixed
+- Fix the bug Safari 9 (the initial window.innerWidth value is 980px)
+
+
 Version 2.1.0 stable (2015-09-23)
 ---------------------------------
 

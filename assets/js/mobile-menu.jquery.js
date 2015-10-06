@@ -273,7 +273,7 @@
          * on the break point settings and the current window size
          */
         updateElementsVisibility: function () {
-            if (this.getViewportSize().width <= this.settings.breakPoint) {
+            if (this.getViewportWidth() <= this.settings.breakPoint) {
                 this.showTrigger();
             } else {
                 this.hideMenu();
@@ -282,21 +282,21 @@
         },
 
         /**
-         * Get the correct viewport size
+         * Get the correct viewport width in pixels
          *
-         * @see http://stackoverflow.com/a/20105868
+         * @see http://stackoverflow.com/a/22161545/3628692
          *
-         * @return {{width: *, height: *}}
+         * @return {int}
          */
-        getViewportSize: function () {
-            var e = window, a = 'inner';
+        getViewportWidth: function () {
+            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-            if (!('innerWidth' in window)) {
-                a = 'client';
-                e = document.documentElement || document.body;
+            // Fix the bug Safari 9 (the initial window.innerWidth value is 980px)
+            if ($('body').hasClass('sf9')) {
+                width = document.documentElement.clientWidth || document.body.clientWidth;
             }
 
-            return {width: e[a + 'Width'], height: e[a + 'Height']};
+            return width;
         },
 
         /**

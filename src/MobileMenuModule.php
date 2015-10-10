@@ -82,8 +82,15 @@ class MobileMenuModule extends \Module
 
         $this->Template->breakPoint = $breakPoint;
 
-        // Add assets
-        $GLOBALS['TL_CSS']['mobileMenu'] = 'system/modules/mobile_menu/assets/css/mobile-menu.min.css||static';
+        $this->addMobileMenuAssets();
+    }
+
+    /**
+     * Add the mobile menu assets
+     */
+    protected function addMobileMenuAssets()
+    {
+        $GLOBALS['TL_CSS']['mobileMenu']        = 'system/modules/mobile_menu/assets/css/mobile-menu.min.css||static';
         $GLOBALS['TL_JAVASCRIPT']['mobileMenu'] = 'system/modules/mobile_menu/assets/js/mobile-menu.jquery.min.js|static';
     }
 }

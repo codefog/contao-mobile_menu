@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.2.0 stable (2015-10-??)
+---------------------------------
+
+### Improved
+- Created an overridable method for adding assets
+
+
 Version 2.1.1 stable (2015-10-06)
 ---------------------------------
 

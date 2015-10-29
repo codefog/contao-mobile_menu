@@ -49,6 +49,11 @@
          * Initialize the plugin
          */
         init: function () {
+            // Hide the menu on IE9 as it is not supported
+            if ($('body').hasClass('ie9')) {
+                return;
+            }
+
             // Set the default wrapper
             if (this.settings.offCanvasWrapper === null) {
                 this.settings.offCanvasWrapper = $('#wrapper');

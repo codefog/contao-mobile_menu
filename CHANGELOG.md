@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.2.2 stable (2015-??-??)
+---------------------------------
+
+### Fixed
+- Fix the bug in IE (the initial window.innerWidth value can be incorrect) 
+
+
 Version 2.2.1 stable (2015-10-29)
 ---------------------------------
 

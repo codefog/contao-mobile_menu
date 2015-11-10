@@ -294,10 +294,11 @@
          * @return {int}
          */
         getViewportWidth: function () {
+            var body  = $('body');
             var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-            // Fix the bug Safari 9 (the initial window.innerWidth value is 980px)
-            if ($('body').hasClass('sf9')) {
+            // Fix the bug in Safari 9 and IE (the initial window.innerWidth value can be incorrect)
+            if (body.hasClass('sf9') || body.hasClass('ie')) {
                 width = document.documentElement.clientWidth || document.body.clientWidth;
             }
 

@@ -49,8 +49,10 @@
          * Initialize the plugin
          */
         init: function () {
-            // Hide the menu on IE9 as it is not supported
-            if ($('body').hasClass('ie9')) {
+            var body = $('body');
+
+            // Hide the menu on IE8-9 as they are not supported
+            if (body.hasClass('ie8') || body.hasClass('ie9')) {
                 return;
             }
 

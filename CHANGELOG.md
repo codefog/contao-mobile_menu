@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.2.3 stable (2015-11-17)
+---------------------------------
+
+### Fixed
+- The mobile menu was always visible on IE8
+
+
 Version 2.2.2 stable (2015-11-10)
 ---------------------------------
 

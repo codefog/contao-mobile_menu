@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.2.4 stable (2015-11-19)
+---------------------------------
+
+### Fixed
+- The trigger is no longer visible on IE8-9
+
+
 Version 2.2.3 stable (2015-11-17)
 ---------------------------------
 

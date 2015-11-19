@@ -68,3 +68,11 @@
 .mobile_menu li.submenu_show > ul {
     display: block;
 }
+
+/* Hide menu on IE8-9 */
+body.ie8 .mobile_menu,
+body.ie8 .mobile_menu_trigger,
+body.ie9 .mobile_menu,
+body.ie9 .mobile_menu_trigger {
+    display: none !important;
+}

@@ -43,6 +43,11 @@
     box-shadow: none !important;
 }
 
+/* Trigger */
+.mobile_menu_trigger {
+    display: none;
+}
+
 /* Wrapper */
 .mobile_menu_wrapper {
     position: relative;

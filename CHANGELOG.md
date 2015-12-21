@@ -9,6 +9,9 @@ Version 2.3.0 stable (????-??-??)
 - The collapsible navigation feature is now optional (see #5)
 - Use the "vh" units for full height elements (see #4)
 
+### Fixed
+- Hide the mobile menu trigger initially via CSS (see #8)
+
 
 Version 2.2.4 stable (2015-11-19)
 ---------------------------------

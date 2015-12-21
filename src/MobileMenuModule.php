@@ -37,10 +37,10 @@ class MobileMenuModule extends \Module
             $objTemplate = new \BackendTemplate('be_wildcard');
 
             $objTemplate->wildcard = '### ' . utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['mobile_menu'][0]) . ' ###';
-            $objTemplate->title = $this->headline;
-            $objTemplate->id = $this->id;
-            $objTemplate->link = $this->name;
-            $objTemplate->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
+            $objTemplate->title    = $this->headline;
+            $objTemplate->id       = $this->id;
+            $objTemplate->link     = $this->name;
+            $objTemplate->href     = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
 
             return $objTemplate->parse();
         }
@@ -53,16 +53,17 @@ class MobileMenuModule extends \Module
      */
     protected function compile()
     {
-        $this->Template->trigger        = $this->mobile_menu_trigger;
-        $this->Template->html           = $this->mobile_menu_html;
-        $this->Template->position       = $this->mobile_menu_position;
-        $this->Template->size           = (int) $this->mobile_menu_size;
-        $this->Template->overlay        = $this->mobile_menu_overlay;
-        $this->Template->offCanvas      = $this->mobile_menu_offCanvas;
-        $this->Template->animation      = $this->mobile_menu_animation;
-        $this->Template->animationSpeed = (int) $this->mobile_menu_animationSpeed;
-        $this->Template->mediaQuery     = $this->mobile_menu_mediaQuery;
-        $this->Template->noShadow       = $this->mobile_menu_noShadow;
+        $this->Template->trigger           = $this->mobile_menu_trigger;
+        $this->Template->html              = $this->mobile_menu_html;
+        $this->Template->position          = $this->mobile_menu_position;
+        $this->Template->size              = (int)$this->mobile_menu_size;
+        $this->Template->overlay           = $this->mobile_menu_overlay;
+        $this->Template->offCanvas         = $this->mobile_menu_offCanvas;
+        $this->Template->animation         = $this->mobile_menu_animation;
+        $this->Template->animationSpeed    = (int)$this->mobile_menu_animationSpeed;
+        $this->Template->mediaQuery        = $this->mobile_menu_mediaQuery;
+        $this->Template->noShadow          = $this->mobile_menu_noShadow;
+        $this->Template->disableNavigation = $this->mobile_menu_disableNavigation;
 
         $breakPoint = 0;
 
@@ -78,7 +79,7 @@ class MobileMenuModule extends \Module
 
         // Set a custom break point
         if ($this->mobile_menu_breakpoint) {
-            $breakPoint = (int) $this->mobile_menu_breakpoint;
+            $breakPoint = (int)$this->mobile_menu_breakpoint;
         }
 
         $this->Template->breakPoint = $breakPoint;

@@ -18,8 +18,10 @@
             'animation': false, // Enable the animation
             'animationSpeed': 500, // The animation speed in milliseconds
             'breakPoint': 0, // The breakpoint to show the menu
+            'disableNavigation': false, // Disable the collapsible navigation
             'menuActiveClass': 'active', // The menu active CSS class
-            'menuSubNavigationCssClass': 'submenu_show', // The sub navigation active CSS class
+            'menuSubNavigationHideCssClass': 'submenu_hide', // The sub navigation inactive CSS class
+            'menuSubNavigationShowCssClass': 'submenu_show', // The sub navigation active CSS class
             'offCanvas': false, // The off canvas mode
             'offCanvasWrapper': null, // The off canvas content wrapper
             'offCanvasWrapperClass': 'mobile_menu_wrapper', // The off canvas content wrapper class
@@ -90,9 +92,11 @@
             var animationSpeed = this.getAnimationSpeed();
 
             // Init the navigation
-            this.element.find('.level_1').each(function() {
-                self.initMenuNavigation($(this));
-            });
+            if (this.settings.disableNavigation !== true) {
+                this.element.find('.level_1').each(function () {
+                    self.initMenuNavigation($(this));
+                });
+            }
 
             // Init the close buttons
             this.element.find('[data-mobile-menu="close"]').on('click', function(e) {
@@ -162,17 +166,19 @@
 
                 // Open the submenu of the active item
                 if (link.hasClass('active') || link.hasClass('trail')) {
-                    item.addClass(self.settings.menuSubNavigationCssClass);
+                    item.addClass(self.settings.menuSubNavigationShowCssClass);
+                } else {
+                    item.addClass(self.settings.menuSubNavigationHideCssClass);
                 }
 
                 // Open the submenu on click
                 link.on('click', function(e) {
                     var parent = $(this).parent();
 
-                    if (!parent.hasClass(self.settings.menuSubNavigationCssClass)) {
+                    if (!parent.hasClass(self.settings.menuSubNavigationShowCssClass)) {
                         e.preventDefault();
-                        subMenus.removeClass(self.settings.menuSubNavigationCssClass);
-                        parent.addClass(self.settings.menuSubNavigationCssClass);
+                        subMenus.removeClass(self.settings.menuSubNavigationShowCssClass).addClass(self.settings.menuSubNavigationHideCssClass);
+                        parent.removeClass(self.settings.menuSubNavigationHideCssClass).addClass(self.settings.menuSubNavigationShowCssClass);
                     }
                 });
 

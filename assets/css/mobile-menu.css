@@ -65,7 +65,7 @@
 }
 
 /* Navigation */
-.mobile_menu li.submenu > ul {
+.mobile_menu li.submenu_hide > ul {
     display: none;
 }
 

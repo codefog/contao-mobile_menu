@@ -62,6 +62,7 @@ class MobileMenuModule extends \Module
         $this->Template->animation      = $this->mobile_menu_animation;
         $this->Template->animationSpeed = (int) $this->mobile_menu_animationSpeed;
         $this->Template->mediaQuery     = $this->mobile_menu_mediaQuery;
+        $this->Template->noShadow       = $this->mobile_menu_noShadow;
 
         $breakPoint = 0;
 

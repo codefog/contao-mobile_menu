@@ -7,7 +7,7 @@
     <?= $this->trigger; ?>
 </div>
 
-<div id="mobile-menu-<?= $this->id; ?>" class="mobile_menu">
+<div id="mobile-menu-<?= $this->id; ?>" class="mobile_menu<?php if ($this->noShadow): ?> no_shadow<?php endif; ?>">
     <div class="inner">
         <?= $this->html; ?>
     </div>

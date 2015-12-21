@@ -39,6 +39,10 @@ $GLOBALS['TL_LANG']['tl_module']['mobile_menu_offCanvas']      = [
     'Off canvas effect',
     'Use the off canvas effect when menu is active.'
 ];
+$GLOBALS['TL_LANG']['tl_module']['mobile_menu_noShadow']       = [
+    'Disable menu shadow',
+    'Disable the default menu shadow when it is active.'
+];
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_animation']      = [
     'Enable animation',
     'Enable animation of showing and hiding the menu.'

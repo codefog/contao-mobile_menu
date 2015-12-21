@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.3.0 stable (????-??-??)
+---------------------------------
+
+### Improved
+- Added the option to disable menu shadow (see #6)
+
+
 Version 2.2.4 stable (2015-11-19)
 ---------------------------------
 

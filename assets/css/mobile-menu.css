@@ -39,6 +39,10 @@
     box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
+.mobile_menu.active.no_shadow {
+    box-shadow: none !important;
+}
+
 /* Wrapper */
 .mobile_menu_wrapper {
     position: relative;

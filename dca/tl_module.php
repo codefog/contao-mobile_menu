@@ -20,8 +20,8 @@ $GLOBALS['TL_DCA']['tl_module']['subpalettes']['mobile_menu_animation'] = 'mobil
 $GLOBALS['TL_DCA']['tl_module']['palettes']['mobile_menu'] = '
 {title_legend},name,type;
 {config_legend},mobile_menu_trigger,mobile_menu_html;
-{mobile_menu_display_legend},mobile_menu_phones,mobile_menu_tablets,mobile_menu_breakpoint;
-{mobile_menu_design_legend},mobile_menu_position,mobile_menu_size,mobile_menu_overlay,mobile_menu_offCanvas,mobile_menu_animation;
+{mobile_menu_display_legend},mobile_menu_phones,mobile_menu_tablets,mobile_menu_breakpoint,mobile_menu_disableNavigation;
+{mobile_menu_design_legend},mobile_menu_position,mobile_menu_size,mobile_menu_overlay,mobile_menu_offCanvas,mobile_menu_noShadow,mobile_menu_animation;
 {template_legend:hide},customTpl;
 {protected_legend:hide},protected;
 {expert_legend:hide},guests,cssID,space';
@@ -54,6 +54,15 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_breakpoint'] = array
     'inputType'               => 'text',
     'eval'                    => array('rgxp'=>'digit', 'maxlength'=>4, 'tl_class'=>'w50'),
     'sql'                     => "varchar(4) NOT NULL default ''"
+);
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_disableNavigation'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_module']['mobile_menu_disableNavigation'],
+    'exclude'                 => true,
+    'inputType'               => 'checkbox',
+    'eval'                    => array('tl_class'=>'w50 m12'),
+    'sql'                     => "char(1) NOT NULL default ''"
 );
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_position'] = array
@@ -89,6 +98,15 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_overlay'] = array
 $GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_offCanvas'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG']['tl_module']['mobile_menu_offCanvas'],
+    'exclude'                 => true,
+    'inputType'               => 'checkbox',
+    'eval'                    => array('tl_class'=>'w50'),
+    'sql'                     => "char(1) NOT NULL default ''"
+);
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_noShadow'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_module']['mobile_menu_noShadow'],
     'exclude'                 => true,
     'inputType'               => 'checkbox',
     'eval'                    => array('tl_class'=>'w50'),

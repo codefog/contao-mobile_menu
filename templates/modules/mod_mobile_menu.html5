@@ -7,7 +7,7 @@
     <?= $this->trigger; ?>
 </div>
 
-<div id="mobile-menu-<?= $this->id; ?>" class="mobile_menu">
+<div id="mobile-menu-<?= $this->id; ?>" class="mobile_menu<?php if ($this->noShadow): ?> no_shadow<?php endif; ?>">
     <div class="inner">
         <?= $this->html; ?>
     </div>
@@ -23,6 +23,7 @@
         'breakPoint': <?= $this->breakPoint ?>,
         'offCanvas': <?= $this->offCanvas ? 'true' : 'false' ?>,
         'overlay': <?= $this->overlay ? 'true' : 'false' ?>,
+        'disableNavigation': <?= $this->disableNavigation ? 'true' : 'false' ?>,
         'position': '<?= $this->position ?>',
         <?php if ($this->size): ?>'size': '<?= $this->size ?>',<?php endif; ?>
         'trigger': $('#mobile-menu-<?= $this->id; ?>-trigger')

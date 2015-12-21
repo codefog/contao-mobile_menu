@@ -39,6 +39,15 @@
     box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
+.mobile_menu.active.no_shadow {
+    box-shadow: none !important;
+}
+
+/* Trigger */
+.mobile_menu_trigger {
+    display: none;
+}
+
 /* Wrapper */
 .mobile_menu_wrapper {
     position: relative;
@@ -52,7 +61,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 99;
 }
 
@@ -61,7 +70,7 @@
 }
 
 /* Navigation */
-.mobile_menu li.submenu > ul {
+.mobile_menu li.submenu_hide > ul {
     display: none;
 }
 

@@ -112,7 +112,7 @@
 
             switch (this.settings.position) {
                 case 'left':
-                    this.element.css({'left': 0, 'top': 0, 'width': size, 'height': '100%'});
+                    this.element.css({'left': 0, 'top': 0, 'width': size, 'height': '100vh'});
                     this.element.css(this.getCssTranslateRules('-100%', 0));
                     break;
 
@@ -127,7 +127,7 @@
                     break;
 
                 case 'right':
-                    this.element.css({'right': 0, 'top': 0, 'width': size, 'height': '100%'});
+                    this.element.css({'right': 0, 'top': 0, 'width': size, 'height': '100vh'});
                     this.element.css(this.getCssTranslateRules('100%', 0));
                     break;
             }

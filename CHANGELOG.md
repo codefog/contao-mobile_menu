@@ -7,6 +7,7 @@ Version 2.3.0 stable (????-??-??)
 ### Improved
 - Added the option to disable menu shadow (see #6)
 - The collapsible navigation feature is now optional (see #5)
+- Use the "vh" units for full height elements (see #4)
 
 
 Version 2.2.4 stable (2015-11-19)

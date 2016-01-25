@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.3.1 stable (2016-01-25)
+---------------------------------
+
+### Fixed
+- Correctly detect the viewport width using window.matchMedia
+
+
 Version 2.3.0 stable (2015-12-21)
 ---------------------------------
 

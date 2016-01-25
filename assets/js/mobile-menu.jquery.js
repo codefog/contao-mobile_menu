@@ -286,31 +286,12 @@
          * on the break point settings and the current window size
          */
         updateElementsVisibility: function () {
-            if (this.getViewportWidth() <= this.settings.breakPoint) {
+            if (window.matchMedia('(max-width: ' + this.settings.breakPoint + 'px)').matches) {
                 this.showTrigger();
             } else {
                 this.hideMenu();
                 this.hideTrigger();
             }
-        },
-
-        /**
-         * Get the correct viewport width in pixels
-         *
-         * @see http://stackoverflow.com/a/22161545/3628692
-         *
-         * @return {int}
-         */
-        getViewportWidth: function () {
-            var body  = $('body');
-            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-            // Fix the bug in Safari 9 and IE (the initial window.innerWidth value can be incorrect)
-            if (body.hasClass('sf9') || body.hasClass('ie')) {
-                width = document.documentElement.clientWidth || document.body.clientWidth;
-            }
-
-            return width;
         },
 
         /**

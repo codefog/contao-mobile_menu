@@ -1,7 +1,7 @@
 mobile_menu Changelog
 =====================
 
-Version 2.3.2 stable (????-??-??)
+Version 2.3.2 stable (2016-08-05)
 ---------------------------------
 
 ### Fixed

@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.3.2 stable (????-??-??)
+---------------------------------
+
+### Fixed
+- The extension is now compatible with Contao 4
+
+
 Version 2.3.1 stable (2016-01-25)
 ---------------------------------
 

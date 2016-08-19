@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.3.4 stable (2016-08-19)
+---------------------------------
+
+### Fixed
+- Improve the performance of the animation
+
+
 Version 2.3.3 stable (2016-08-05)
 ---------------------------------
 

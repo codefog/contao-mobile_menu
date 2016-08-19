@@ -467,6 +467,7 @@
             scale = scale ? ' scale3d(1, 1, 1)' : '';
 
             return {
+                'will-change': 'transform',
                 '-webkit-transform': 'translate3d(' + x + ', ' + y + ', 0)' + scale,
                 '-moz-transform': 'translate3d(' + x + ', ' + y + ', 0)' + scale,
                 '-ms-transform': 'translate3d(' + x + ', ' + y + ', 0)' + scale,

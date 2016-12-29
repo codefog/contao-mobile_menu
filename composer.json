@@ -18,6 +18,11 @@
     "require-dev": {
         "contao/manager-plugin": "~1.0"
     },
+    "autoload":{
+        "psr-4": {
+            "Codefog\\MobileMenu\\": "src"
+        }
+    },
     "extra": {
         "contao": {
             "sources": {

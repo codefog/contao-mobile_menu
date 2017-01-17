@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.4.1 stable (2017-01-17)
+---------------------------------
+
+### Fixed
+- Removed Contao Manager Plugin support (#10)
+
+
 Version 2.4.0 stable (2017-01-03)
 ---------------------------------
 

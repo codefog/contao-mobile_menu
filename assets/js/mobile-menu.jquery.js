@@ -162,7 +162,7 @@
 
             subMenus.each(function() {
                 var item = $(this);
-                var link = item.children('a, span').eq(0);
+                var link = item.children('a, span, strong').eq(0);
 
                 // Open the submenu of the active item
                 if (link.hasClass('active') || link.hasClass('trail')) {

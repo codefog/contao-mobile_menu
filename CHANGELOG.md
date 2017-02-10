@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.4.1 stable (????-??-??)
+---------------------------------
+
+### Fixed
+- Support "strong" tag in the navigation (#11)
+
+
 Version 2.4.1 stable (2017-01-17)
 ---------------------------------
 

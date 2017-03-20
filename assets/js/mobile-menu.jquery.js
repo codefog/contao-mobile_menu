@@ -30,6 +30,7 @@
             'overlayBackgroundCssClass': 'background', // The overlay background CSS class
             'overlayCssClass': 'mobile_menu_overlay', // The overlay CSS class
             'position': 'left', // The position of the menu (left, top, right, bottom)
+            'parentTogglers': false, // Force the parent items to work only as togglers
             'size': 75, // The size of the menu in percent
             'trigger': null // The menu trigger
         };
@@ -179,6 +180,9 @@
                         e.preventDefault();
                         subMenus.removeClass(self.settings.menuSubNavigationShowCssClass).addClass(self.settings.menuSubNavigationHideCssClass);
                         parent.removeClass(self.settings.menuSubNavigationHideCssClass).addClass(self.settings.menuSubNavigationShowCssClass);
+                    } else if (self.settings.parentTogglers) {
+                        e.preventDefault();
+                        parent.addClass(self.settings.menuSubNavigationHideCssClass).removeClass(self.settings.menuSubNavigationShowCssClass);
                     }
                 });
 

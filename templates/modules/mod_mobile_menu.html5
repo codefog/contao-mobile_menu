@@ -24,6 +24,7 @@
         'offCanvas': <?= $this->offCanvas ? 'true' : 'false' ?>,
         'overlay': <?= $this->overlay ? 'true' : 'false' ?>,
         'disableNavigation': <?= $this->disableNavigation ? 'true' : 'false' ?>,
+        'parentTogglers': <?= $this->parentTogglers ? 'true' : 'false' ?>,
         'position': '<?= $this->position ?>',
         <?php if ($this->size): ?>'size': '<?= $this->size ?>',<?php endif; ?>
         'trigger': $('#mobile-menu-<?= $this->id; ?>-trigger')

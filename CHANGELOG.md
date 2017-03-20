@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.5.0 stable (2017-03-20)
+---------------------------------
+
+### Improved
+- Added the option to make parent items work as togglers only
+
+
 Version 2.4.2 stable (2017-02-10)
 ---------------------------------
 

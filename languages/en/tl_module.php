@@ -30,6 +30,10 @@ $GLOBALS['TL_LANG']['tl_module']['mobile_menu_disableNavigation'] = [
     'Disable collapsible navigation',
     'Disable the default collapsible navigation feature (not recommended).'
 ];
+$GLOBALS['TL_LANG']['tl_module']['mobile_menu_parentTogglers']    = [
+    'Make parent items work as togglers only',
+    'Force the items that have submenus to work as togglers only. It will not be possible to access the page with submenus by clicking on it.'
+];
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_position']          = ['Position', 'Here you can choose the menu position.'];
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_size']              = [
     'Custom menu size (%s)',

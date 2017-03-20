@@ -64,6 +64,7 @@ class MobileMenuModule extends \Module
         $this->Template->mediaQuery        = $this->mobile_menu_mediaQuery;
         $this->Template->noShadow          = $this->mobile_menu_noShadow;
         $this->Template->disableNavigation = $this->mobile_menu_disableNavigation;
+        $this->Template->parentTogglers    = $this->mobile_menu_parentTogglers;
 
         $breakPoint = 0;
 

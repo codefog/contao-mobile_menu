@@ -31,6 +31,7 @@
             'overlayCssClass': 'mobile_menu_overlay', // The overlay CSS class
             'position': 'left', // The position of the menu (left, top, right, bottom)
             'parentTogglers': false, // Force the parent items to work only as togglers
+            'closeOnLinkClick': false, // Close the menu on any link click
             'size': 75, // The size of the menu in percent
             'trigger': null // The menu trigger
         };
@@ -104,6 +105,13 @@
                 e.preventDefault();
                 self.hideMenu();
             });
+
+            // Close the menu on links click
+            if (this.settings.closeOnLinkClick) {
+                this.element.find('a').on('click', function() {
+                    self.hideMenu();
+                });
+            }
 
             // Set the position CSS class
             this.element.addClass('position_' + this.settings.position);

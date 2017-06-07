@@ -14,7 +14,7 @@
 /**
  * Extension version
  */
-@define('MOBILE_MENU_VERSION', '2.5');
+@define('MOBILE_MENU_VERSION', '2.6');
 @define('MOBILE_MENU_BUILD', '0');
 
 /**

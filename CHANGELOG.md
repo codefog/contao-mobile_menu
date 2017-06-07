@@ -1,6 +1,13 @@
 mobile_menu Changelog
 =====================
 
+Version 2.6.0 stable (2017-06-07)
+---------------------------------
+
+### Improved
+- Added the option to close the menu on link click
+
+
 Version 2.5.0 stable (2017-03-20)
 ---------------------------------
 

@@ -19,6 +19,7 @@
             'animationSpeed': 500, // The animation speed in milliseconds
             'breakPoint': 0, // The breakpoint to show the menu
             'disableNavigation': false, // Disable the collapsible navigation
+            'keepInPlace': false, // Keeps the menu in place
             'menuActiveClass': 'active', // The menu active CSS class
             'menuSubNavigationHideCssClass': 'submenu_hide', // The sub navigation inactive CSS class
             'menuSubNavigationShowCssClass': 'submenu_show', // The sub navigation active CSS class
@@ -117,7 +118,9 @@
             this.element.addClass('position_' + this.settings.position);
 
             // Append the menu to <body>
-            this.element.appendTo('body');
+            if (!this.settings.keepInPlace) {
+                this.element.appendTo('body');
+            }
 
             switch (this.settings.position) {
                 case 'left':

@@ -47,21 +47,25 @@ close action should receive the following data attribute:
 <a href="#" data-mobile-menu="close">Close</a>
 ```
 
-## Show/hide menu callbacks
+## Events
 
-You can also provide custom functionality upon menu show/hide by using callbacks in the template:
+### Show menu event
+
+The event is triggered when the menu is shown:
 
 ```js
-$('#mobile-menu-...').mobileMenu({
-    // ... other config options
-    'onMenuShow': function () {
-        // this = plugin instance
-        console.log('show');
-    },
-    'onMenuHide': function () {
-        // this = plugin instance
-        console.log('hide');
-    }
+$('#mobile-menu-...').on('showMobileMenu', function (event, plugin) {
+    // ...
+});
+```
+
+### Hide menu event
+
+The event is triggered when the menu is hidden:
+
+```js
+$('#mobile-menu-...').on('hideMobileMenu', function (event, plugin) {
+    // ...
 });
 ```
 

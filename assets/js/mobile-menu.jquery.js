@@ -35,10 +35,7 @@
             'parentTogglers': false, // Force the parent items to work only as togglers
             'closeOnLinkClick': false, // Close the menu on any link click
             'size': 75, // The size of the menu in percent
-            'trigger': null, // The menu trigger
-
-            'onMenuShow': null, // On menu show callback
-            'onMenuHide': null,  // On menu hide callback
+            'trigger': null // The menu trigger
         };
 
     // The actual plugin constructor
@@ -363,9 +360,7 @@
          * Show the menu
          */
         showMenu: function () {
-            if (typeof this.settings.onMenuShow === 'function') {
-                this.settings.onMenuShow.call(this);
-            }
+            this.element.trigger('showMobileMenu', [this]);
 
             switch (this.settings.position) {
                 case 'left':
@@ -415,9 +410,7 @@
          * Hide the menu
          */
         hideMenu: function () {
-            if (typeof this.settings.onMenuHide === 'function') {
-                this.settings.onMenuHide.call(this);
-            }
+            this.element.trigger('hideMobileMenu', [this]);
 
             switch (this.settings.position) {
                 case 'left':

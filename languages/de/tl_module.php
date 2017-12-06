@@ -34,7 +34,7 @@ $GLOBALS['TL_LANG']['tl_module']['mobile_menu_disableNavigation'] = [
 ];
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_parentTogglers'] = [
     'Eltern-Menüpunkte nur als Toggler verwenden',
-    'Bewirkt, daß die Menüpunkte mit Untermenüs nur als Toggler verwendet werden können. Damit ist es nicht möglich, eine Seite mit Untermenüs durch Klick auszuwählen.',
+    'Bewirkt, dass die Menüpunkte mit Untermenüs nur als Toggler verwendet werden können. Damit ist es nicht möglich, eine Seite mit Untermenüs durch Klick auszuwählen.',
 ];
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_closeOnLinkClick'] = [
     'Menü beim Klick auf einen Link schließen.',

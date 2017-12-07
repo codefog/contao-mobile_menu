@@ -1,6 +1,5 @@
 # Mobile Menu extension for Contao Open Source CMS
 
-
 [![](https://img.shields.io/packagist/v/codefog/contao-mobile_menu.svg)](https://packagist.org/packages/codefog/contao-mobile_menu)
 [![](https://img.shields.io/packagist/l/codefog/contao-mobile_menu.svg)](https://github.com/codefog/contao-mobile_menu/blob/master/LICENSE.txt)
 [![](https://img.shields.io/packagist/dt/codefog/contao-mobile_menu.svg)](https://packagist.org/packages/codefog/contao-mobile_menu)
@@ -11,7 +10,7 @@ Add the mobile menu to your website that can be accessed on tablets and phone de
 
 The navigation module inside the panel will automatically be granted an extra functionality. By default the subitems are hidden but they can be toggled by clicking the parent record. Another click on the parent record will take the visitor to its page.
 
-This library is JavasScript library agnostic - works fine with jQuery and MooTools, but also without them.
+The script requires a jQuery to be included on your page.
 
 ![](docs/images/preview.png)
 

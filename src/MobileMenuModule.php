@@ -66,6 +66,7 @@ class MobileMenuModule extends \Module
         $this->Template->disableNavigation = $this->mobile_menu_disableNavigation;
         $this->Template->parentTogglers    = $this->mobile_menu_parentTogglers;
         $this->Template->closeOnLinkClick  = $this->mobile_menu_closeOnLinkClick;
+        $this->Template->keepInPlace       = $this->mobile_menu_keepInPlace;
 
         $breakPoint = 0;
 

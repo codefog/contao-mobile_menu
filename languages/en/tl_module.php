@@ -38,6 +38,10 @@ $GLOBALS['TL_LANG']['tl_module']['mobile_menu_closeOnLinkClick']   = [
     'Close menu on link click',
     'Close the mobile menu if any link inside it is clicked. This is especially useful for one-page navigation scroll.'
 ];
+$GLOBALS['TL_LANG']['tl_module']['mobile_menu_keepInPlace']   = [
+    'Keep menu in place',
+    'Do not move the menu to the &lt;body&gt; element at the bottom. <strong>Note:</strong> this setting is dedicated for users who would like to change the menu default behavior.'
+];
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_position']          = ['Position', 'Here you can choose the menu position.'];
 $GLOBALS['TL_LANG']['tl_module']['mobile_menu_size']              = [
     'Custom menu size (%s)',

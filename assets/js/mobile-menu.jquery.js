@@ -19,7 +19,9 @@
             'animationSpeed': 500, // The animation speed in milliseconds
             'breakPoint': 0, // The breakpoint to show the menu
             'disableNavigation': false, // Disable the collapsible navigation
+            'keepInPlace': false, // Keeps the menu in place
             'menuActiveClass': 'active', // The menu active CSS class
+            'menuActiveHtmlClass': 'mobile_menu_active', // The menu active <html> CSS class
             'menuSubNavigationHideCssClass': 'submenu_hide', // The sub navigation inactive CSS class
             'menuSubNavigationShowCssClass': 'submenu_show', // The sub navigation active CSS class
             'offCanvas': false, // The off canvas mode
@@ -117,7 +119,9 @@
             this.element.addClass('position_' + this.settings.position);
 
             // Append the menu to <body>
-            this.element.appendTo('body');
+            if (!this.settings.keepInPlace) {
+                this.element.appendTo('body');
+            }
 
             switch (this.settings.position) {
                 case 'left':
@@ -356,6 +360,8 @@
          * Show the menu
          */
         showMenu: function () {
+            this.element.trigger('showMobileMenu', [this]);
+
             switch (this.settings.position) {
                 case 'left':
                     this.element.css(this.getCssTranslateRules(0, 0, true));
@@ -392,6 +398,7 @@
 
             this.showOverlay();
             this.element.addClass(this.settings.menuActiveClass);
+            $('html').addClass(this.settings.menuActiveHtmlClass);
 
             // Add class to trigger
             if (this.settings.trigger) {
@@ -403,6 +410,8 @@
          * Hide the menu
          */
         hideMenu: function () {
+            this.element.trigger('hideMobileMenu', [this]);
+
             switch (this.settings.position) {
                 case 'left':
                     this.element.css(this.getCssTranslateRules('-100%', 0, true));
@@ -439,6 +448,7 @@
 
             this.hideOverlay();
             this.element.removeClass(this.settings.menuActiveClass);
+            $('html').removeClass(this.settings.menuActiveHtmlClass);
 
             // Remove the class from trigger
             if (this.settings.trigger) {

@@ -20,7 +20,7 @@ $GLOBALS['TL_DCA']['tl_module']['subpalettes']['mobile_menu_animation'] = 'mobil
 $GLOBALS['TL_DCA']['tl_module']['palettes']['mobile_menu'] = '
 {title_legend},name,type;
 {config_legend},mobile_menu_trigger,mobile_menu_html;
-{mobile_menu_display_legend},mobile_menu_phones,mobile_menu_tablets,mobile_menu_breakpoint,mobile_menu_parentTogglers,mobile_menu_disableNavigation,mobile_menu_closeOnLinkClick;
+{mobile_menu_display_legend},mobile_menu_phones,mobile_menu_tablets,mobile_menu_breakpoint,mobile_menu_parentTogglers,mobile_menu_disableNavigation,mobile_menu_closeOnLinkClick,mobile_menu_keepInPlace;
 {mobile_menu_design_legend},mobile_menu_position,mobile_menu_size,mobile_menu_overlay,mobile_menu_offCanvas,mobile_menu_noShadow,mobile_menu_animation;
 {template_legend:hide},customTpl;
 {protected_legend:hide},protected;
@@ -79,7 +79,16 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_closeOnLinkClick'] = arra
     'label'                   => &$GLOBALS['TL_LANG']['tl_module']['mobile_menu_closeOnLinkClick'],
     'exclude'                 => true,
     'inputType'               => 'checkbox',
-    'eval'                    => array('tl_class'=>'w50 m12'),
+    'eval'                    => array('tl_class'=>'w50'),
+    'sql'                     => "char(1) NOT NULL default ''"
+);
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['mobile_menu_keepInPlace'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_module']['mobile_menu_keepInPlace'],
+    'exclude'                 => true,
+    'inputType'               => 'checkbox',
+    'eval'                    => array('tl_class'=>'w50'),
     'sql'                     => "char(1) NOT NULL default ''"
 );
 

@@ -21,7 +21,7 @@
             'disableNavigation': false, // Disable the collapsible navigation
             'keepInPlace': false, // Keeps the menu in place
             'menuActiveClass': 'active', // The menu active CSS class
-            'menuActiveBodyClass': 'mobile_menu_active', // The menu active <body> CSS class
+            'menuActiveHtmlClass': 'mobile_menu_active', // The menu active <html> CSS class
             'menuSubNavigationHideCssClass': 'submenu_hide', // The sub navigation inactive CSS class
             'menuSubNavigationShowCssClass': 'submenu_show', // The sub navigation active CSS class
             'offCanvas': false, // The off canvas mode
@@ -398,7 +398,7 @@
 
             this.showOverlay();
             this.element.addClass(this.settings.menuActiveClass);
-            $('body').addClass(this.settings.menuActiveBodyClass);
+            $('html').addClass(this.settings.menuActiveHtmlClass);
 
             // Add class to trigger
             if (this.settings.trigger) {
@@ -448,7 +448,7 @@
 
             this.hideOverlay();
             this.element.removeClass(this.settings.menuActiveClass);
-            $('body').removeClass(this.settings.menuActiveBodyClass);
+            $('html').removeClass(this.settings.menuActiveHtmlClass);
 
             // Remove the class from trigger
             if (this.settings.trigger) {

@@ -1,8 +1,9 @@
 # Mobile Menu extension for Contao Open Source CMS
 
-![](https://img.shields.io/packagist/v/codefog/contao-mobile_menu.svg)
-![](https://img.shields.io/packagist/l/codefog/contao-mobile_menu.svg)
-![](https://img.shields.io/packagist/dt/codefog/contao-mobile_menu.svg)
+
+[![](https://img.shields.io/packagist/v/codefog/contao-mobile_menu.svg)](https://packagist.org/packages/codefog/contao-mobile_menu)
+[![](https://img.shields.io/packagist/l/codefog/contao-mobile_menu.svg)](https://github.com/codefog/contao-mobile_menu/blob/master/LICENSE.txt)
+[![](https://img.shields.io/packagist/dt/codefog/contao-mobile_menu.svg)](https://packagist.org/packages/codefog/contao-mobile_menu)
 
 Mobile Menu is an extension for the [Contao Open Source CMS](https://contao.org).
 

@@ -76,6 +76,10 @@ $GLOBALS['TL_LANG']['tl_module']['mobile_menu_html'] = [
     'Menu Inhalt',
     'Hier können Sie den HTML Inhalt des Menüs hinzufügen.',
 ];
+$GLOBALS['TL_LANG']['tl_module']['mobile_menu_keepInPlace']   = [
+    'Menü an der Position behalten',
+    'Bewege das Menü nicht ans Ende des &lt;body&gt; Elementes. <strong>Hinweis:</strong> Diese Einstellung ist für Nutzer, die das Standardverhalten des Menüs ändern möchten.'
+];
 
 /**
  * Reference

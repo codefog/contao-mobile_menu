@@ -18,7 +18,7 @@ namespace Codefog\MobileMenu;
  *
  * Front end module "mobile menu".
  */
-class MobileMenuModule extends \Module
+class MobileMenuModule extends \Contao\Module
 {
 
     /**
@@ -34,9 +34,9 @@ class MobileMenuModule extends \Module
     public function generate()
     {
         if (TL_MODE == 'BE') {
-            $objTemplate = new \BackendTemplate('be_wildcard');
+            $objTemplate = new \Contao\BackendTemplate('be_wildcard');
 
-            $objTemplate->wildcard = '### ' . utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['mobile_menu'][0]) . ' ###';
+            $objTemplate->wildcard = '### ' . mb_strtoupper($GLOBALS['TL_LANG']['FMD']['mobile_menu'][0]) . ' ###';
             $objTemplate->title    = $this->headline;
             $objTemplate->id       = $this->id;
             $objTemplate->link     = $this->name;

@@ -33,14 +33,18 @@ class MobileMenuModule extends \Contao\Module
      */
     public function generate()
     {
-        if (TL_MODE == 'BE') {
+        $request = \Contao\System::getContainer()->get('request_stack')->getCurrentRequest();
+
+        if ($request && \Contao\System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request))
+        {
             $objTemplate = new \Contao\BackendTemplate('be_wildcard');
 
             $objTemplate->wildcard = '### ' . mb_strtoupper($GLOBALS['TL_LANG']['FMD']['mobile_menu'][0]) . ' ###';
             $objTemplate->title    = $this->headline;
             $objTemplate->id       = $this->id;
             $objTemplate->link     = $this->name;
-            $objTemplate->href     = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
+            $objTemplate->href = \Contao\StringUtil::specialcharsUrl(\Contao\System::getContainer()->get('router')->generate('contao_backend', array('do'=>'themes', 'table'=>'tl_module', 'act'=>'edit', 'id'=>$this->id)));
+
 
             return $objTemplate->parse();
         }
